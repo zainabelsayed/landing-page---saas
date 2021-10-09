@@ -30,11 +30,17 @@ ul {
   color: black;
   text-align: center;
   padding: 0.9rem 0.5rem 0.9rem 0.5rem;
-  background-color: #f7f7f7;
+  background-color: #d4d4d4;
   width: 40%;
   font-weight: 500;
   display: block;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.3s ease-in-out; }
+  .hero-section-head__button:hover, .interior-section .container .interior-section__head a:hover, .believe-section .container .believe-section__head a:hover, .plans .plans__plan-cards ul li a:hover {
+    color: white;
+    background-image: linear-gradient(to right, #ad30fe, #7e43fb);
+    padding: 1rem 0.7rem 1rem 0.7rem;
+    width: 45%; }
 
 img {
   width: 100%;
@@ -62,7 +68,11 @@ nav {
         nav .container ul li a, nav .interior-section .container ul li a, .interior-section nav .container ul li a, nav .believe-section .container ul li a, .believe-section nav .container ul li a {
           text-decoration: none;
           font-size: 0.7rem;
-          color: white; }
+          color: white;
+          transition: 0.3s ease-in-out; }
+          nav .container ul li a:hover {
+            font-size: 0.8rem;
+            font-weight: 700; }
     nav .container .icon {
       color: white;
       display: none; }
@@ -87,7 +97,7 @@ header {
         font-size: 0.7rem; }
     header .container h3, header .interior-section .container h3, .interior-section header .container h3, header .believe-section .container h3, .believe-section header .container h3 {
       padding: 1rem 1.5rem 1rem 1.5rem;
-      background-color: #f7f7f7;
+      background-color: #d4d4d4;
       color: black;
       width: 14rem;
       height: 3rem;
@@ -126,7 +136,16 @@ header {
       border-radius: 5px;
       box-shadow: 5px 10px 18px #ebebeb;
       width: 100%;
-      text-align: left; }
+      text-align: left;
+      transition: 0.5s ease-in-out; }
+      .unique-features .unique-features__cards-wrapper li:hover {
+        background-image: linear-gradient(to right, #ad30fe, #7e43fb);
+        cursor: pointer;
+        flex: 0 0 25%; }
+        .unique-features .unique-features__cards-wrapper li:hover p, .unique-features .unique-features__cards-wrapper li:hover h3 {
+          color: white; }
+        .unique-features .unique-features__cards-wrapper li:hover .latest-news__date {
+          color: gray; }
       .unique-features .unique-features__cards-wrapper li figure {
         width: 25%;
         margin-bottom: 1.5rem; }
@@ -298,10 +317,14 @@ header {
       justify-content: space-evenly;
       align-items: center;
       width: 30%;
-      border: 1px solid #c0bebe;
+      border: 1px solid #d4d4d4;
       margin-left: 1rem;
       border-radius: 0.3rem;
       padding: 0.3rem; }
+      .download-app .download-app__buttons a:hover {
+        color: black;
+        background-color: white;
+        width: 30%; }
       .download-app .download-app__buttons a div {
         width: 60%;
         font-size: 0.7rem; }
@@ -341,12 +364,20 @@ header {
       background-color: #f9faff;
       text-align: left;
       padding: 3rem 1.5rem; }
+      .latest-news .latest-news__warapper .latest-news__card:hover {
+        background-image: linear-gradient(to right, #ad30fe, #7e43fb);
+        cursor: pointer;
+        flex: 0 0 30%; }
+        .latest-news .latest-news__warapper .latest-news__card:hover p, .latest-news .latest-news__warapper .latest-news__card:hover h3 {
+          color: white; }
+        .latest-news .latest-news__warapper .latest-news__card:hover .latest-news__date {
+          color: gray; }
       .latest-news .latest-news__warapper .latest-news__card .latest-news__date {
         padding: 0.2rem;
         margin-bottom: 1.5rem;
         background-color: white;
         width: 40%;
-        border: 1px solid #e0dede;
+        border: 1px solid #d4d4d4;
         font-size: 0.7rem;
         text-align: center; }
       .latest-news .latest-news__warapper .latest-news__card p {
@@ -365,7 +396,7 @@ header {
 
 footer {
   background-color: #161616;
-  color: #d3d0d0;
+  color: #d4d4d4;
   padding: 4rem 0rem; }
   footer .container, footer .interior-section .container, .interior-section footer .container, footer .believe-section .container, .believe-section footer .container {
     justify-content: space-between;
@@ -374,7 +405,7 @@ footer {
       padding-bottom: 2rem;
       color: white; }
     footer .container a, footer .interior-section .container a, .interior-section footer .container a, footer .believe-section .container a, .believe-section footer .container a {
-      color: #d3d0d0; }
+      color: #d4d4d4; }
     footer .container .top-products {
       flex: 0 0 20%; }
       footer .container .top-products li {
@@ -391,7 +422,7 @@ footer {
         border-radius: 1.5rem;
         border-style: hidden; }
       footer .container .new-sletter a {
-        border: 1px solid blueviolet;
+        border: 1px solid transparent;
         padding: 0.5rem;
         border-radius: 1.5rem;
         background-image: linear-gradient(to right, #ad30fe, #7e43fb);
@@ -401,7 +432,10 @@ footer {
         width: 30%;
         position: relative;
         margin-top: -2.4rem;
-        margin-left: 70%; }
+        margin-left: 70%;
+        transition: 0.3s ease-in-out; }
+        footer .container .new-sletter a:hover {
+          background-image: linear-gradient(to right, #d091fa, #4b96c9); }
     footer .container .instagram-feed {
       flex: 0 0 20%; }
       footer .container .instagram-feed .instagram-feed__gallery {

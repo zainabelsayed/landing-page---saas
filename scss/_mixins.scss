@@ -20,3 +20,32 @@
       margin: 0 auto;
     }
 }
+
+@mixin hover($width:45%) {
+  &:hover {
+    color:white;
+    background-image: $gradient;
+    padding: 1rem 0.7rem 1rem 0.7rem;
+    width: $width;
+}
+}
+@mixin card-hover ($width:25%) {
+  &:hover{
+    background-image: $gradient;
+    cursor: pointer;
+    flex: 0 0 $width;
+    p,h3{
+      color: white;
+    }
+    .latest-news__date {
+        color: gray;
+    }
+  }
+}
+@mixin hover-dwn {
+  &:hover {
+    color:black;
+    background-color:white;
+    width: 30%;
+}
+}
